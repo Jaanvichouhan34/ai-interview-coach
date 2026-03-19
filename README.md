@@ -51,3 +51,140 @@ feedback, and a communication coach.
 
 1. Clone the repository
 ```bash
+   git clone https://github.com/Jaanvichouhan34/ai-interview-coach.git
+   cd ai-interview-coach
+```
+
+2. Install backend dependencies
+```bash
+   cd backend
+   npm install
+```
+
+3. Create `.env` file in backend folder
+```
+   GEMINI_API_KEY=your_gemini_api_key_here
+```
+
+4. Install frontend dependencies
+```bash
+   cd ../frontend
+   npm install
+```
+
+5. Create `.env` file in frontend folder
+```
+   VITE_BACKEND_URL=http://localhost:5000
+```
+
+### Running Locally
+
+Start backend (in one terminal):
+```bash
+cd backend
+node server.js
+```
+
+Start frontend (in another terminal):
+```bash
+cd frontend
+npm run dev
+```
+
+Open http://localhost:5173 in your browser 🎉
+
+---
+
+## 📁 Project Structure
+```
+ai-interview-coach/
+├── backend/
+│   ├── controllers/
+│   │   └── geminiController.js
+│   ├── routes/
+│   │   ├── interview.js
+│   │   └── communication.js
+│   └── server.js
+│
+└── frontend/
+    └── src/
+        ├── components/
+        │   ├── Navbar.jsx
+        │   ├── Hero.jsx
+        │   ├── Features.jsx
+        │   ├── Testimonials.jsx
+        │   ├── ContactForm.jsx
+        │   └── Footer.jsx
+        ├── pages/
+        │   ├── Home.jsx
+        │   ├── Interview.jsx
+        │   ├── InterviewSession.jsx
+        │   ├── Communication.jsx
+        │   ├── Dashboard.jsx
+        │   ├── Quiz.jsx
+        │   ├── Login.jsx
+        │   ├── Signup.jsx
+        │   ├── About.jsx
+        │   ├── Help.jsx
+        │   ├── Leaderboard.jsx
+        │   ├── PrivacyPolicy.jsx
+        │   └── TermsOfService.jsx
+        └── App.jsx
+```
+
+---
+
+## 🔑 Environment Variables
+
+### Backend (`backend/.env`)
+| Variable | Description |
+|----------|-------------|
+| `GEMINI_API_KEY` | Google Gemini API key |
+
+### Frontend (`frontend/.env`)
+| Variable | Description |
+|----------|-------------|
+| `VITE_BACKEND_URL` | Backend server URL |
+
+---
+
+## 🎯 Interview Tracks
+
+| Track | Questions |
+|-------|-----------|
+| Frontend Developer | React, JS, CSS, HTML |
+| Backend Developer | Node.js, APIs, Databases |
+| DSA & Algorithms | Data structures, Problem solving |
+| HR & Behavioral | Soft skills, Situational questions |
+| Full Stack | Combined frontend + backend |
+
+---
+
+## 👩‍💻 Developer
+
+**Jaanvi Chouhan**
+- 🎓 B.Tech CSE — MERN Stack Developer
+- 💼 [LinkedIn](https://www.linkedin.com/in/jaanvi-chouhan)
+- 🐙 [GitHub](https://github.com/Jaanvichouhan34)
+- 📸 [Instagram](https://www.instagram.com/jaanvi_chouhan18)
+- 📧 jaanvichouhan18805@gmail.com
+
+---
+
+## 🤝 Contributors & Testers
+
+Special thanks to:
+- **Himanshu Kumar Tiwari** — Full Stack Developer
+- **Mohit Chouhan** — Retail Operations Professional  
+- **Hemant Sharma** — AI/ML Engineer
+
+---
+
+## 📄 License
+
+This project is open source and available under the 
+[MIT License](LICENSE).
+
+---
+
+⭐ If you found this helpful, please give it a star!
