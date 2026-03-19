@@ -1,43 +1,70 @@
-# 🎯 InterviewAI — AI-Powered Interview Coach
+# 🎯 InterviewAI
+**Crack your next tech interview with the power of AI.**
 
-A full-stack web application that helps students crack 
-tech interviews using AI-generated questions, real-time 
-feedback, and a communication coach.
+[![GitHub stars](https://img.shields.io/github/stars/Jaanvichouhan34/ai-interview-coach?color=7F77DD&style=for-the-badge)](https://github.com/Jaanvichouhan34/ai-interview-coach/stargazers)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://ai-interview-coach-steel-three.vercel.app)
+[![Render](https://img.shields.io/badge/Backend-Render-46E3B7?style=for-the-badge&logo=render)](https://ai-interview-coach-backend-r1mj.onrender.com)
 
-🌐 **Live Demo:** https://ai-interview-coach-steel-three.vercel.app
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Gemini](https://img.shields.io/badge/Gemini%20AI-4285F4?style=for-the-badge&logo=google&logoColor=white)
+
+[🚀 Live Demo](https://ai-interview-coach-steel-three.vercel.app) • [🐛 Report Bug](https://github.com/Jaanvichouhan34/ai-interview-coach/issues) • [✨ Request Feature](https://github.com/Jaanvichouhan34/ai-interview-coach/issues)
+
+---
+
+## 📸 Preview
+
+> AI-powered mock interviews, communication coaching,
+> and quiz mode — all in one premium platform.
 
 ---
 
 ## ✨ Features
 
-- 🎤 **Mock Interviews** — Role-based AI questions with strict scoring
-- 💬 **Communication Coach** — Talk to AI, improve English fluency
-- 📊 **Progress Tracker** — Track your interview performance over time
-- 🧠 **Quiz Mode** — MCQ quizzes for each tech role
-- 🎙️ **Voice Input** — Speak your answers, no typing needed
-- 🏆 **Leaderboard** — Compete with peers
-- 🌙 **Dark/Light Mode** — Toggle between themes
-- 📱 **Responsive Design** — Works on all devices
+| Feature | Description |
+|--------|-------------|
+| 🎤 Mock Interviews | Role-based AI questions with strict scoring |
+| 💬 Communication Coach | Talk to AI friend, improve English fluency |
+| 🧠 Quiz Mode | MCQ quizzes per tech role with explanations |
+| 🎙️ Voice Input | Speak your answers using Web Speech API |
+| 📊 Progress Tracker | Track performance and improvement over time |
+| 🏆 Leaderboard | Compete with peers and climb the ranks |
+| 🌙 Dark / Light Mode | Toggle between premium themes |
+| 📱 Fully Responsive | Optimized for all screen sizes |
+
+---
+
+## 🎯 Interview Tracks
+```
+⚛️  Frontend Developer    →  React, JS, CSS, HTML
+⚙️  Backend Developer     →  Node.js, APIs, Databases  
+🧮  DSA & Algorithms      →  Data Structures, Problem Solving
+👔  HR & Behavioral       →  Soft Skills, Situational Questions
+🗄️  Full Stack            →  Combined Frontend + Backend
+```
 
 ---
 
 ## 🛠️ Tech Stack
 
 ### Frontend
-- React (Vite)
-- React Router DOM
-- CSS3 with CSS Variables
-- Web Speech API (Voice Input)
+- ⚛️ React (Vite)
+- 🔀 React Router DOM
+- 🎨 CSS3 with CSS Variables
+- 🎙️ Web Speech API
 
 ### Backend
-- Node.js
-- Express.js
-- Google Gemini API (AI features)
-- CORS
+- 🟢 Node.js + Express.js
+- 🤖 Google Gemini API
+- 🔒 dotenv + CORS
 
 ### Deployment
-- Frontend → Vercel
-- Backend → Render
+- 🔺 Frontend → **Vercel**
+- 🟦 Backend → **Render**
 
 ---
 
@@ -45,77 +72,68 @@ feedback, and a communication coach.
 
 ### Prerequisites
 - Node.js v18+
-- Google Gemini API Key
+- Google Gemini API Key from [aistudio.google.com](https://aistudio.google.com)
 
-### Installation
-
-1. Clone the repository
+### 1. Clone the repo
 ```bash
-   git clone https://github.com/Jaanvichouhan34/ai-interview-coach.git
-   cd ai-interview-coach
+git clone https://github.com/Jaanvichouhan34/ai-interview-coach.git
+cd ai-interview-coach
 ```
 
-2. Install backend dependencies
-```bash
-   cd backend
-   npm install
-```
-
-3. Create `.env` file in backend folder
-```
-   GEMINI_API_KEY=your_gemini_api_key_here
-```
-
-4. Install frontend dependencies
-```bash
-   cd ../frontend
-   npm install
-```
-
-5. Create `.env` file in frontend folder
-```
-   VITE_BACKEND_URL=http://localhost:5000
-```
-
-### Running Locally
-
-Start backend (in one terminal):
+### 2. Setup Backend
 ```bash
 cd backend
-node server.js
+npm install
 ```
 
-Start frontend (in another terminal):
+Create `backend/.env`:
+```env
+GEMINI_API_KEY=your_gemini_api_key_here
+```
+```bash
+node server.js
+# Server running on port 5000 ✅
+```
+
+### 3. Setup Frontend
 ```bash
 cd frontend
-npm run dev
+npm install
 ```
 
-Open http://localhost:5173 in your browser 🎉
+Create `frontend/.env`:
+```env
+VITE_BACKEND_URL=http://localhost:5000
+```
+```bash
+npm run dev
+# Open http://localhost:5173 🎉
+```
 
 ---
 
 ## 📁 Project Structure
 ```
 ai-interview-coach/
-├── backend/
-│   ├── controllers/
-│   │   └── geminiController.js
-│   ├── routes/
-│   │   ├── interview.js
-│   │   └── communication.js
-│   └── server.js
 │
-└── frontend/
-    └── src/
-        ├── components/
+├── 📂 backend/
+│   ├── 📂 controllers/
+│   │   └── geminiController.js    # All Gemini API logic
+│   ├── 📂 routes/
+│   │   ├── interview.js           # Interview + Quiz routes
+│   │   └── communication.js      # Chat + Evaluate routes
+│   └── server.js                  # Express server entry
+│
+└── 📂 frontend/
+    └── 📂 src/
+        ├── 📂 components/         # Reusable UI components
         │   ├── Navbar.jsx
         │   ├── Hero.jsx
         │   ├── Features.jsx
         │   ├── Testimonials.jsx
         │   ├── ContactForm.jsx
         │   └── Footer.jsx
-        ├── pages/
+        ├── 📂 pages/              # Route-based pages
         │   ├── Home.jsx
         │   ├── Interview.jsx
         │   ├── InterviewSession.jsx
@@ -126,65 +144,80 @@ ai-interview-coach/
         │   ├── Signup.jsx
         │   ├── About.jsx
         │   ├── Help.jsx
-        │   ├── Leaderboard.jsx
-        │   ├── PrivacyPolicy.jsx
-        │   └── TermsOfService.jsx
-        └── App.jsx
+        │   └── Leaderboard.jsx
+        ├── config.js              # API base URL config
+        └── App.jsx                # Router setup
 ```
 
 ---
 
 ## 🔑 Environment Variables
 
-### Backend (`backend/.env`)
+### Backend
 | Variable | Description |
 |----------|-------------|
-| `GEMINI_API_KEY` | Google Gemini API key |
+| `GEMINI_API_KEY` | Your Google Gemini API key |
 
-### Frontend (`frontend/.env`)
+### Frontend
 | Variable | Description |
 |----------|-------------|
 | `VITE_BACKEND_URL` | Backend server URL |
 
 ---
 
-## 🎯 Interview Tracks
+## 🌐 Deployment Guide
 
-| Track | Questions |
-|-------|-----------|
-| Frontend Developer | React, JS, CSS, HTML |
-| Backend Developer | Node.js, APIs, Databases |
-| DSA & Algorithms | Data structures, Problem solving |
-| HR & Behavioral | Soft skills, Situational questions |
-| Full Stack | Combined frontend + backend |
+### Deploy Frontend on Vercel
+1. Push code to GitHub
+2. Go to [vercel.com](https://vercel.com) → New Project
+3. Set Root Directory to `frontend`
+4. Add env variable `VITE_BACKEND_URL`
+5. Deploy ✅
+
+### Deploy Backend on Render
+1. Go to [render.com](https://render.com) → New Web Service
+2. Set Root Directory to `backend`
+3. Build Command: `npm install`
+4. Start Command: `node server.js`
+5. Add env variable `GEMINI_API_KEY`
+6. Deploy ✅
 
 ---
 
 ## 👩‍💻 Developer
 
-**Jaanvi Chouhan**
-- 🎓 B.Tech CSE — MERN Stack Developer
-- 💼 [LinkedIn](https://www.linkedin.com/in/jaanvi-chouhan)
-- 🐙 [GitHub](https://github.com/Jaanvichouhan34)
-- 📸 [Instagram](https://www.instagram.com/jaanvi_chouhan18)
-- 📧 jaanvichouhan18805@gmail.com
-
----
-
-## 🤝 Contributors & Testers
-
-Special thanks to:
-- **Himanshu Kumar Tiwari** — Full Stack Developer
-- **Mohit Chouhan** — Retail Operations Professional  
-- **Hemant Sharma** — AI/ML Engineer
+<table>
+  <tr>
+    <td align="center">
+      <b>Jaanvi Chouhan</b><br/>
+      MERN Stack Developer<br/>
+      B.Tech CSE Student<br/><br/>
+      <a href="https://www.linkedin.com/in/jaanvi-chouhan">
+        <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+      </a>
+      <a href="https://github.com/Jaanvichouhan34">
+        <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/>
+      </a>
+      <a href="mailto:jaanvichouhan18805@gmail.com">
+        <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+      </a>
+    </td>
+  </tr>
+</table>
 
 ---
 
 ## 📄 License
 
-This project is open source and available under the 
-[MIT License](LICENSE).
+Distributed under the MIT License.
+See [LICENSE](LICENSE) for more information.
 
 ---
 
-⭐ If you found this helpful, please give it a star!
+<div align="center">
+
+**⭐ Star this repo if you found it helpful!**
+
+Made with 💜 by [Jaanvi Chouhan](https://github.com/Jaanvichouhan34)
+
+</div>
