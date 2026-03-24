@@ -1,167 +1,226 @@
-<div align="center">
+# 🎯 InterviewAI
+**Crack your next tech interview with the power of AI.**
 
-<!-- Animated Header with typing effect -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,25,30&height=200&section=header&text=Jaanvi%20Chouhan&fontSize=60&fontAlignY=38&desc=Full-Stack%20Developer%20%E2%80%A2%20AI%20Builder%20%E2%80%A2%20CS%20Undergrad&descAlignY=58&descSize=18&fontColor=ffffff&animation=twinkling" width="100%"/>
+[![GitHub stars](https://img.shields.io/github/stars/Jaanvichouhan34/ai-interview-coach?color=7F77DD&style=for-the-badge)](https://github.com/Jaanvichouhan34/ai-interview-coach/stargazers)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://ai-interview-coach-steel-three.vercel.app)
+[![Render](https://img.shields.io/badge/Backend-Render-46E3B7?style=for-the-badge&logo=render)](https://ai-interview-coach-backend-r1mj.onrender.com)
 
-<!-- Typing SVG -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=A78BFA&center=true&vCenter=true&multiline=false&width=600&lines=Building+things+that+matter+%F0%9F%9A%80;React+%E2%9A%9B%EF%B8%8F+%7C+Node.js+%F0%9F%9F%A2+%7C+Python+%F0%9F%90%8D+%7C+AI+%F0%9F%A4%96;Turning+coffee+into+code+since+2023+%E2%98%95)](https://git.io/typing-svg)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Gemini](https://img.shields.io/badge/Gemini%20AI-4285F4?style=for-the-badge&logo=google&logoColor=white)
 
-<br/>
-
-<!-- Badges row -->
-[![Portfolio](https://img.shields.io/badge/Portfolio-%23000000.svg?style=for-the-badge&logo=firefox&logoColor=A78BFA)](https://jaanvichouhan34.github.io)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jaanvi-chouhan)
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jaanvichouhan18805@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Jaanvichouhan34)
-
-<br/>
-
-<!-- Profile views + followers -->
-![Profile Views](https://komarev.com/ghpvc/?username=Jaanvichouhan34&label=Profile+Views&color=A78BFA&style=flat-square)
-![GitHub followers](https://img.shields.io/github/followers/Jaanvichouhan34?style=flat-square&color=A78BFA)
-
-</div>
+[🚀 Live Demo](https://ai-interview-coach-steel-three.vercel.app) • [🐛 Report Bug](https://github.com/Jaanvichouhan34/ai-interview-coach/issues) • [✨ Request Feature](https://github.com/Jaanvichouhan34/ai-interview-coach/issues)
 
 ---
 
-## 🌌 About Me
+## 📸 Preview
 
-```ts
-const jaanvi = {
-  location   : "Indore, Madhya Pradesh 🇮🇳",
-  education  : "B.Tech CSE @ Medi-Caps University (2023–2027)",
-  cgpa       : 8.57,
-  role       : "Full-Stack Developer + AI Enthusiast",
-  currentlyBuilding : ["SkillMirror – AI Student Evaluator 🧠", "InterviewAI – AI Mock Interview Platform 🎤"],
-  skills     : ["React", "Node.js", "Next.js", "Python", "Three.js", "OpenCV", "ML"],
-  interests  : ["AI-powered products", "3D Web", "Open Source", "Hackathons"],
-  funFact    : "I build 3D web experiences that make people say 'wait, this is a website?!' 🤯"
-};
+> AI-powered mock interviews, communication coaching,
+> and quiz mode — all in one premium platform.
+
+---
+
+## ✨ Features
+
+| Feature | Description |
+|--------|-------------|
+| 🎤 Mock Interviews | Role-based AI questions with strict scoring |
+| 💬 Communication Coach | Talk to AI friend, improve English fluency |
+| 🧠 Quiz Mode | MCQ quizzes per tech role with explanations |
+| 🎙️ Voice Input | Speak your answers using Web Speech API |
+| 📊 Progress Tracker | Track performance and improvement over time |
+| 🏆 Leaderboard | Compete with peers and climb the ranks |
+| 🌙 Dark / Light Mode | Toggle between premium themes |
+| 📱 Fully Responsive | Optimized for all screen sizes |
+
+---
+
+## 🎯 Interview Tracks
 ```
-
----
-
-## 🚀 Featured Projects
-
-<div align="center">
-
-### 🎤 InterviewAI — AI Mock Interview Coach
-> *Crack your next tech interview with the power of AI*
-
-[![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://ai-interview-coach-steel-three.vercel.app)
-[![GitHub Repo](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Jaanvichouhan34/ai-interview-coach)
-
-</div>
-
-| Feature | What it does |
-|---|---|
-| 🎤 **Mock Interviews** | Role-based AI questions with strict scoring |
-| 💬 **Communication Coach** | Talk to AI friend, improve English fluency |
-| 🧠 **Quiz Mode** | MCQ quizzes per tech role with explanations |
-| 🎙️ **Voice Input** | Speak your answers using Web Speech API |
-| 📊 **Progress Tracker** | Track performance and improvement over time |
-| 🏆 **Leaderboard** | Compete with peers and climb the ranks |
-
-**Stack:** `React` `Node.js` `Express` `Google Gemini API` `Vite` `Vercel` `Render`
-
----
-
-<div align="center">
-
-### 🧠 SkillMirror — AI Student Performance Evaluator
-> *Bridging the gap between student perception and actual skill levels*
-
-[![Status](https://img.shields.io/badge/Status-In%20Development-yellow?style=for-the-badge)]()
-
-</div>
-
-An AI-powered diagnostic platform that evaluates student performance through automated assessments and ML-driven insights — giving students a **mirror** of their true skill level.
-
-**Stack:** `React` `Python` `Flask` `Machine Learning` `Tailwind CSS`
+⚛️  Frontend Developer    →  React, JS, CSS, HTML
+⚙️  Backend Developer     →  Node.js, APIs, Databases  
+🧮  DSA & Algorithms      →  Data Structures, Problem Solving
+👔  HR & Behavioral       →  Soft Skills, Situational Questions
+🗄️  Full Stack            →  Combined Frontend + Backend
+```
 
 ---
 
 ## 🛠️ Tech Stack
 
-<div align="center">
+### Frontend
+- ⚛️ React (Vite)
+- 🔀 React Router DOM
+- 🎨 CSS3 with CSS Variables
+- 🎙️ Web Speech API
 
-### Languages
-![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![JavaScript](https://img.shields.io/badge/JavaScript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![TypeScript](https://img.shields.io/badge/TypeScript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-![C](https://img.shields.io/badge/C-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
+### Backend
+- 🟢 Node.js + Express.js
+- 🤖 Google Gemini API
+- 🔒 dotenv + CORS
+
+### Deployment
+- 🔺 Frontend → **Vercel**
+- 🟦 Backend → **Render**
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js v18+
+- Google Gemini API Key from [aistudio.google.com](https://aistudio.google.com)
+
+### 1. Clone the repo
+```bash
+git clone https://github.com/Jaanvichouhan34/ai-interview-coach.git
+cd ai-interview-coach
+```
+
+### 2. Setup Backend
+```bash
+cd backend
+npm install
+```
+
+Create `backend/.env`:
+```env
+GEMINI_API_KEY=your_gemini_api_key_here
+```
+```bash
+node server.js
+# Server running on port 5000 ✅
+```
+
+### 3. Setup Frontend
+```bash
+cd frontend
+npm install
+```
+
+Create `frontend/.env`:
+```env
+VITE_BACKEND_URL=http://localhost:5000
+```
+```bash
+npm run dev
+# Open http://localhost:5173 🎉
+```
+
+---
+
+## 📁 Project Structure
+```
+ai-interview-coach/
+│
+├── 📂 backend/
+│   ├── 📂 controllers/
+│   │   └── geminiController.js    # All Gemini API logic
+│   ├── 📂 routes/
+│   │   ├── interview.js           # Interview + Quiz routes
+│   │   └── communication.js      # Chat + Evaluate routes
+│   └── server.js                  # Express server entry
+│
+└── 📂 frontend/
+    └── 📂 src/
+        ├── 📂 components/         # Reusable UI components
+        │   ├── Navbar.jsx
+        │   ├── Hero.jsx
+        │   ├── Features.jsx
+        │   ├── Testimonials.jsx
+        │   ├── ContactForm.jsx
+        │   └── Footer.jsx
+        ├── 📂 pages/              # Route-based pages
+        │   ├── Home.jsx
+        │   ├── Interview.jsx
+        │   ├── InterviewSession.jsx
+        │   ├── Communication.jsx
+        │   ├── Dashboard.jsx
+        │   ├── Quiz.jsx
+        │   ├── Login.jsx
+        │   ├── Signup.jsx
+        │   ├── About.jsx
+        │   ├── Help.jsx
+        │   └── Leaderboard.jsx
+        ├── config.js              # API base URL config
+        └── App.jsx                # Router setup
+```
+
+---
+
+## 🔑 Environment Variables
+
+### Backend
+| Variable | Description |
+|----------|-------------|
+| `GEMINI_API_KEY` | Your Google Gemini API key |
 
 ### Frontend
-![React](https://img.shields.io/badge/React-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![Next JS](https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js&logoColor=white)
-![Three.js](https://img.shields.io/badge/Three.js-black?style=for-the-badge&logo=three.js&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/Tailwind-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Framer](https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue)
-![Vite](https://img.shields.io/badge/Vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
-
-### Backend & AI
-![NodeJS](https://img.shields.io/badge/Node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
-![Flask](https://img.shields.io/badge/Flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white)
-
-### Tools & Platforms
-![Git](https://img.shields.io/badge/Git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
-
-</div>
+| Variable | Description |
+|----------|-------------|
+| `VITE_BACKEND_URL` | Backend server URL |
 
 ---
 
-## 📊 GitHub Stats
+## 🌐 Deployment Guide
 
-<div align="center">
+### Deploy Frontend on Vercel
+1. Push code to GitHub
+2. Go to [vercel.com](https://vercel.com) → New Project
+3. Set Root Directory to `frontend`
+4. Add env variable `VITE_BACKEND_URL`
+5. Deploy ✅
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=Jaanvichouhan34&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=A78BFA&icon_color=A78BFA"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Jaanvichouhan34&layout=compact&langs_count=7&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=A78BFA"/>
-
-<br/>
-
-[![GitHub Streak](https://streak-stats.demolab.com?user=Jaanvichouhan34&theme=tokyonight&hide_border=true&background=0d1117&stroke=A78BFA&ring=A78BFA&fire=FF6B6B&currStreakLabel=A78BFA)](https://git.io/streak-stats)
-
-</div>
-
----
-
-## 🏆 Achievements & Open Source
-
-<div align="center">
-
-| 🌟 | Achievement |
-|---|---|
-| 🤝 | **GSSoC Contributor** — GirlScript Summer of Code Open Source |
-| 🏁 | **Smart India Hackathon** — Participant (2nd & 3rd Year) |
-| ⚡ | **Quasare Hackathon** — Participant @ 47 Billion |
-
-</div>
+### Deploy Backend on Render
+1. Go to [render.com](https://render.com) → New Web Service
+2. Set Root Directory to `backend`
+3. Build Command: `npm install`
+4. Start Command: `node server.js`
+5. Add env variable `GEMINI_API_KEY`
+6. Deploy ✅
 
 ---
 
-## 📈 Contribution Graph
+## 👩‍💻 Developer
 
-<div align="center">
+<table>
+  <tr>
+    <td align="center">
+      <b>Jaanvi Chouhan</b><br/>
+      MERN Stack Developer<br/>
+      B.Tech CSE Student<br/><br/>
+      <a href="https://www.linkedin.com/in/jaanvi-chouhan">
+        <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+      </a>
+      <a href="https://github.com/Jaanvichouhan34">
+        <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/>
+      </a>
+      <a href="mailto:jaanvichouhan18805@gmail.com">
+        <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+      </a>
+    </td>
+  </tr>
+</table>
 
-[![Jaanvi's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Jaanvichouhan34&bg_color=0d1117&color=A78BFA&line=A78BFA&point=ffffff&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+---
 
-</div>
+## 📄 License
+
+Distributed under the MIT License.
+See [LICENSE](LICENSE) for more information.
 
 ---
 
 <div align="center">
 
-<!-- Footer wave -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,25,30&height=120&section=footer&animation=twinkling" width="100%"/>
+**⭐ Star this repo if you found it helpful!**
 
-**"Build things that make people pause and think — wait, that's possible?"**
-
-*Made with 💜 and way too much chai ☕*
+Made with 💜 by [Jaanvi Chouhan](https://github.com/Jaanvichouhan34)
 
 </div>
+
+
+.....
