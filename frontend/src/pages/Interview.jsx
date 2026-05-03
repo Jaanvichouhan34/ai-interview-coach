@@ -36,7 +36,7 @@ export default function Interview() {
         <div className="flat-card" style={{ borderLeft: '4px solid var(--accent-color)' }}>
           <h3 style={{ marginBottom: '1rem' }}>Strict Evaluation</h3>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>
-            We've tuned our Gemini engine to be a senior tech lead. Expect honest feedback and scores that truly reflect your current interview readiness.
+            We've tuned our Groq AI engine to be a senior tech lead. Expect honest feedback and scores that truly reflect your current interview readiness.
           </p>
         </div>
       </div>

@@ -10,13 +10,20 @@ const generateQuestions = async (req, res) => {
 
     try {
         const response = await axios.post(
-            `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${process.env.GEMINI_API_KEY}`,
+            'https://api.groq.com/openai/v1/chat/completions',
             {
-                contents: [{ parts: [{ text: prompt }] }]
+                model: 'llama-3.3-70b-versatile',
+                messages: [{ role: 'user', content: prompt }]
+            },
+            {
+                headers: {
+                    'Authorization': `Bearer ${process.env.GROQ_API_KEY}`,
+                    'Content-Type': 'application/json'
+                }
             }
         );
 
-        const text = response.data.candidates[0].content.parts[0].text;
+        const text = response.data.choices[0].message.content;
         const cleaned = text.replace(/```json|```/g, '').trim();
         const questions = JSON.parse(cleaned);
         res.json({ questions });
@@ -66,13 +73,20 @@ const evaluateAnswer = async (req, res) => {
 
     try {
         const response = await axios.post(
-            `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${process.env.GEMINI_API_KEY}`,
+            'https://api.groq.com/openai/v1/chat/completions',
             {
-                contents: [{ parts: [{ text: prompt }] }]
+                model: 'llama-3.3-70b-versatile',
+                messages: [{ role: 'user', content: prompt }]
+            },
+            {
+                headers: {
+                    'Authorization': `Bearer ${process.env.GROQ_API_KEY}`,
+                    'Content-Type': 'application/json'
+                }
             }
         );
 
-        const text = response.data.candidates[0].content.parts[0].text;
+        const text = response.data.choices[0].message.content;
         const cleaned = text.replace(/```json|```/g, '').trim();
         const feedback = JSON.parse(cleaned);
         res.json({ feedback });
@@ -112,13 +126,20 @@ const generateQuiz = async (req, res) => {
 
     try {
         const response = await axios.post(
-            `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${process.env.GEMINI_API_KEY}`,
+            'https://api.groq.com/openai/v1/chat/completions',
             {
-                contents: [{ parts: [{ text: prompt }] }]
+                model: 'llama-3.3-70b-versatile',
+                messages: [{ role: 'user', content: prompt }]
+            },
+            {
+                headers: {
+                    'Authorization': `Bearer ${process.env.GROQ_API_KEY}`,
+                    'Content-Type': 'application/json'
+                }
             }
         );
 
-        const text = response.data.candidates[0].content.parts[0].text;
+        const text = response.data.choices[0].message.content;
         const cleaned = text.replace(/```json|```/g, '').trim();
         const quiz = JSON.parse(cleaned);
         res.json({ quiz });
@@ -182,10 +203,19 @@ Return ONLY this exact JSON, nothing else:
 
   try {
     const response2 = await axios.post(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${process.env.GEMINI_API_KEY}`,
-      { contents: [{ parts: [{ text: prompt }] }] }
+      'https://api.groq.com/openai/v1/chat/completions',
+      {
+        model: 'llama-3.3-70b-versatile',
+        messages: [{ role: 'user', content: prompt }]
+      },
+      {
+        headers: {
+          'Authorization': `Bearer ${process.env.GROQ_API_KEY}`,
+          'Content-Type': 'application/json'
+        }
+      }
     );
-    const text = response2.data.candidates[0].content.parts[0].text;
+    const text = response2.data.choices[0].message.content;
     const cleaned = text.replace(/```json|```/g,'').trim();
     const feedback = JSON.parse(cleaned);
     res.json({ feedback });
@@ -211,24 +241,29 @@ const chatWithAI = async (req, res) => {
        Be warm, encouraging and fun.`;
 
   const conversationHistory = (history || []).map(m => ({
-    role: m.role === 'assistant' || m.role === 'model' ? 'model' : 'user',
-    parts: [{ text: m.content }]
+    role: m.role === 'assistant' || m.role === 'model' ? 'assistant' : 'user',
+    content: m.content
   }));
 
   try {
     const response = await axios.post(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${process.env.GEMINI_API_KEY}`,
+      'https://api.groq.com/openai/v1/chat/completions',
       {
-        system_instruction: {
-          parts: [{ text: systemPrompt }]
-        },
-        contents: [
-          ...conversationHistory.filter(m => m.parts[0].text),
-          { role: 'user', parts: [{ text: message }] }
+        model: 'llama-3.3-70b-versatile',
+        messages: [
+          { role: 'system', content: systemPrompt },
+          ...conversationHistory.filter(m => m.content),
+          { role: 'user', content: message }
         ]
+      },
+      {
+        headers: {
+          'Authorization': `Bearer ${process.env.GROQ_API_KEY}`,
+          'Content-Type': 'application/json'
+        }
       }
     );
-    const reply = response.data.candidates[0].content.parts[0].text;
+    const reply = response.data.choices[0].message.content;
     res.json({ reply });
   } catch (error) {
     console.error(error.message);

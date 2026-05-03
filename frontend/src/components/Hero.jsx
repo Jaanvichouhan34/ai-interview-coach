@@ -71,7 +71,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           style={{ fontSize: '1.25rem', maxWidth: '600px', margin: '0 auto 2.5rem auto' }}
         >
-          Practice with our Gemini-powered AI coach, get real-time feedback, improve your communication skills, and land your dream job with confidence.
+          Practice with our Groq-powered AI coach, get real-time feedback, improve your communication skills, and land your dream job with confidence.
         </motion.p>
 
         <motion.div 
@@ -83,9 +83,6 @@ export default function Hero() {
           <Link to="/interview" className="btn btn-accent clickable" style={{ padding: '1rem 2.5rem', fontSize: '1.1rem' }}>
             Get Started Free
           </Link>
-          <a href="#demo" className="btn btn-outline clickable" style={{ padding: '1rem 2.5rem', fontSize: '1.1rem' }}>
-            Watch Demo <Play size={18} />
-          </a>
         </motion.div>
 
         <motion.div 

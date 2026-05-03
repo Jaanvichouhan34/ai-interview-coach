@@ -50,7 +50,7 @@ export default function About() {
           <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}><CheckCircle2 color="var(--success-color)" size={20} /> <strong>Frontend:</strong> React (Vite), Framer Motion</li>
             <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}><CheckCircle2 color="var(--success-color)" size={20} /> <strong>Backend:</strong> Node.js, Express</li>
-            <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}><CheckCircle2 color="var(--success-color)" size={20} /> <strong>AI Engine:</strong> Google Gemini 2.0 Flash</li>
+            <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}><CheckCircle2 color="var(--success-color)" size={20} /> <strong>AI Engine:</strong> Groq Llama 3 API</li>
             <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}><CheckCircle2 color="var(--success-color)" size={20} /> <strong>Voice:</strong> Web Speech API</li>
           </ul>
         </motion.div>

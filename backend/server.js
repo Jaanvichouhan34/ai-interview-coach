@@ -1,5 +1,5 @@
 require('dotenv').config({ path: __dirname + '/.env' });
-console.log("API KEY:", process.env.GEMINI_API_KEY ? "Loaded" : "Not Loaded");
+console.log("API KEY:", process.env.GROQ_API_KEY ? "Loaded" : "Not Loaded");
 
 const express = require('express');
 const cors = require('cors');

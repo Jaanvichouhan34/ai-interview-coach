@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     q: "How does AI scoring work?",
-    a: "We use the Google Gemini 2.0 Flash API to evaluate your answers with a STRICT technical rubric. Nonsense or incorrect answers yield low scores (1-3/10), while comprehensive answers with examples yield high scores (8-10/10)."
+    a: "We use the Groq Llama 3 API to evaluate your answers with a STRICT technical rubric. Nonsense or incorrect answers yield low scores (1-3/10), while comprehensive answers with examples yield high scores (8-10/10)."
   },
   {
     q: "Can I use voice input?",

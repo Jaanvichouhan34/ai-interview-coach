@@ -5,11 +5,31 @@ export default function ContactForm() {
   const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
   const [isSent, setIsSent] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (formData.name && formData.email && formData.message) {
-      // Simulate sending
-      setTimeout(() => setIsSent(true), 800);
+      try {
+        const response = await fetch('https://formspree.io/f/xjglglng', {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            name: formData.name,
+            email: formData.email,
+            subject: formData.subject,
+            message: formData.message
+          })
+        });
+        
+        if (response.ok) {
+          setIsSent(true);
+          setFormData({ name: '', email: '', subject: '', message: '' });
+        }
+      } catch (error) {
+        console.error("Form submission failed", error);
+      }
     }
   };
 
