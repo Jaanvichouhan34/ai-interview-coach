@@ -218,7 +218,7 @@ export default function Communication() {
               <motion.div key="chat" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }}>
                 <div style={{ height: '400px', overflowY: 'auto', marginBottom: '2rem', display: 'flex', flexDirection: 'column', gap: '1rem', padding: '1rem' }} className="custom-scroll">
                   {chatMessages.map((m, i) => (
-                    <div key={i} style={{ alignSelf: m.role === 'ai' ? 'flex-start' : 'flex-end', maxWidth: '80%', background: m.role === 'ai' ? 'var(--surface-hover)' : 'var(--primary-color)', color: m.role === 'ai' ? 'var(--text-main)' : '#fff', padding: '1rem', borderRadius: '15px' }}>
+                    <div key={i} style={{ alignSelf: m.role !== 'user' ? 'flex-start' : 'flex-end', maxWidth: '80%', background: m.role !== 'user' ? 'var(--surface-hover)' : 'var(--primary-color)', color: m.role !== 'user' ? 'var(--text-main)' : '#fff', padding: '1rem', borderRadius: '15px' }}>
                       {m.content}
                     </div>
                   ))}
